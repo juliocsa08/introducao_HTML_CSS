@@ -8,8 +8,8 @@
     <meta name="description" content="Site com o proposito de explicar o HTML como ao todo.">
     <title>Indtrodução ao HTML</title>
 
-    <link rel="shortcut icon" href="./4xopastdvrbe1.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../arquivos/square.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilizacoes/style.css">
     <style>
 
     </style>
@@ -19,14 +19,14 @@
 
     <h1 style="">Tela principal sobre Brainrot assustador</h1>
     <!---H1 é o titulo principal, por boas práticas chamaos somente 1 vez-->
-    <header id="Cabeçalho">
-        <img id= "logo" src="./square.jpeg" alt="Brainrot assustadores." >
+    <header id="cabecalho">
+        <img id="logo" src="../arquivos/square.jpeg" alt="Brainrot assustadores.">
 
         <nav>
 
             <a href="https://www.youtube.com/shorts/4sotPQJFM3A">Sobre tudo cuidado...</a>
             <a href="index.html">Inicial</a>
-            <a href="Teste.pdf" download>Saiba mais</a>
+            <a href="../arquivos/Teste.pdf" download>Saiba mais</a>
         </nav>
 
     </header>
@@ -35,41 +35,65 @@
         <!---Seção modelos de brainrot assustador--->
         <section>
             <h2>modelos Brainrot</h2>
-            <!--- card produto -->
-            <div>
+            <div id="container-flex-produtos">
+                <!--- card produto -->
+                <article class="card-produto">
 
-                <img src="tubarao_33c296f0-d2fb-4f15-a9b1-9dcf9367bae9_800x.webp" alt="modelo x do tralaleiro">
-                <h3>tralaleiro</h3>
-                <span>350,00</span>
+                    <img src="../arquivos/Picsart_25-07-10_18-04-47-906.jpg" alt="modelo x do tung tung">
+                    <h3>Tung Tung Sahur verniz</h3>
+                    <span>$400,00</span>
 
+                </article>
+
+                <!--- card-produto -->
+                <article class="card-produto">
+
+                    <img src="../arquivos/21d8237f-da02-49b8-a9ce-affb5250381d.9e8e88efdf03b73ae8aca584bb834a82.webp"
+                        alt="modelo x da Boneca Ambalabu">
+                    <h3>Boneca Ambalabu</h3>
+                    <span>$250,00</span>
+
+                </article>
+
+                <!--- card-produto -->
+                <article class="card-produto">
+
+                    <img src="../arquivos/tubarao_33c296f0-d2fb-4f15-a9b1-9dcf9367bae9_800x.webp"
+                        alt="modelo x do tralaleiro">
+                    <h3>tralaleiro</h3>
+                    <span>$350,00</span>
+
+                </article>
             </div>
+
         </section>
-        <section>
+
+        <section id="container-flex-Suporte">
 
             <h2>Suporte ao cliente</h2>
 
             <form>
                 <label for="Campo nome completo">Nome Completo:</label>
-                <input type="text" placeholder="Digite seu nome completo" id="Campo nome completo">
+                <input class="form_campos_input" type="text" placeholder="Digite seu nom  e completo" id="Campo nome completo">
 
-                <br /> <!--Quebra a linha -->
+                 <!--Quebra a linha -->
 
                 <label for="Campo- Email">Email:</label>
-                <input type="Email" name="" id="Campo- Email">
+                <input class="form_campos_input" type="Email" name="" id="Campo- Email">
 
-                <br /> <!--Quebra a linha -->
+                 <!--Quebra a linha -->
 
                 <label for="">Senha</label>
 
-                <input type="Password" name="" id="">
+                <input class="form_campos_input" type="Password" name="" id="">
 
-                <br /> <!--Quebra a linha -->
+                 <!--Quebra a linha -->
 
 
                 <label for="">Upload</label>
-                <input type="file" name="" id="">
+                <input class="form_campos_input" type="file" name="" id="">
 
-                <br /> <!--Quebra a linha -->
+                 <!--Quebra a linha -->
 
 
                 <label for="">Estado</label>
@@ -80,29 +104,29 @@
                     <option value="MG">MG</option>
                 </select>
 
-                <br />
+                
 
-                <input type="Checkbox" name="" id="">
+                <input class="form_campos_input" type="Checkbox" name="" id="">
                 <label for="">Li e concordo com os termos.</label>
 
-                <br />
+                
 
                 <label for="">Sexo</label>
-                <br />
+                
                 <label for="">Feminino</label>
-                <input type="radio" name="opcao-Genero" id="" value="Feminino">
+                <input class="form_campos_input" type="radio" name="opcao-Genero" id="" value="Feminino">
 
                 <label for="">Masculino</label>
-                <input type="radio" name="opcao-Genero" id="" value="Masculino">
+                <input class="form_campos_input" type="radio" name="opcao-Genero" id="" value="Masculino">
 
-                <br />
+                
 
                 <!---atributo required torna o campo obrigatorio-->
 
                 <label for="">Descrição:</label>
                 <textarea name="" id="" required></textarea>
 
-                <br />
+                
 
 
                 <button type="submit">Enviar</button>
